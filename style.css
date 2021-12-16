@@ -1,0 +1,106 @@
+body{
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.section-one{
+    display: flex;
+    width: auto;
+    flex-flow: row wrap;
+}
+.header{
+    width: auto;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    background: url('..//hw19/img/qute-image-mbl.jpg') center/cover no-repeat;
+}
+.container{
+    background-color: white;
+    padding: 0 40px 0;
+}
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container1 .button{
+    width: 10%;
+    margin-left: 20px;
+}
+.btn button{
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.section-two{
+    display: flex;
+    color: #fff;
+}
+
+.navigation{
+    padding: 20px 20px;
+    background-color: rgb(84, 148, 11);
+}
+.user{
+    margin-bottom: 40px;
+}
+.user-name{font-weight: bold;
+    margin-bottom: 10px;
+}
+.login input{
+    margin-bottom: 10px;
+}
+.login button{
+    background-color: red;
+    border: none;
+    padding: 4px 10px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.navigation-bar nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.navigation-bar nav ul li a:hover{
+    color: red
+}
+.three{
+    margin: 0px;
+    padding: 0;
+}
+.five{
+    background-color: darkkhaki;
+    padding: 10px;
+}
+.seven{
+    font-size: 1.5rem;
+}
+.eight{
+    display: flex;
+    margin: 10px 0;
+}
+.img img{
+    max-width: 200px;
+}
+.text{
+    padding: 20px 20px;
+}
+.five .nine {
+    background-color: rgb(84, 148, 11);  
+}
+.nine a{
+    color: rgb(19, 13, 13);
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+.nine a:hover{
+    color: red
+}

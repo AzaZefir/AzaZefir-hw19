@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>news</title>
+    <meta charset="utf-8" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+            text-align: justify;
+        }
+
+        a {
+            border: 1px solid black;
+            background-color: rgb(94, 155, 135);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 50px);
+            background-color: #fff;
+            border: none;
+        }
+
+        .grid div:nth-child(1) {
+            grid-column: 1/5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            border: none;
+        }
+
+        .grid div:nth-child(2) {
+            grid-column-start: 1;
+            grid-row-start: 3;
+            grid-row-end: 6;
+            border: none;
+        }
+
+        .grid div:nth-child(3) {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 6;
+            border: none;
+        }
+
+        .grid div {
+            background-color: #fff;
+            padding: 8px 15px;
+            color: #ffffff;
+            font-size: 18px;
+            border: none;
+        }
+
+        .grid div:nth-child(odd) {
+            background-color: #fff;
+            border: none;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            padding: 20px 0;
+            color: #fff;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: rgb(80, 3, 3)
+        }
+
+        h2 {
+            color: black;
+        }
+
+        .navigation {
+            width: 70%;
+        }
+
+        .navigation ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 1.2rem;
+        }
+
+        .section img {
+            max-width: 400px;
+            height: auto;
+        }
+
+        p {
+            color: black;
+        }
+
+        /* .section-text {
+            padding: 20px 20px;
+        } */
+
+        @media(max-width: 1013px) {
+            .hero__container {
+                flex-direction: column;
+            }
+
+            .logo img {
+                max-width: 100%;
+            }
+        }
+
+
+        .news__items {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+            grid-gap: 10px;
+
+        }
+
+        .item {
+            background-color: #fff;
+            box-shadow: 1px 1px 4px 1px #ccc;
+        }
+
+
+        .img-pic img {
+            max-width: 100%;
+        }
+
+        .title {
+            padding: 10px 10px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .text {
+            padding: 0 10px;
+        }
+
+        .read {
+            padding: 10px;
+        }
+
+        .read {
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="header">
+            <div class="logo">
+                <h2>BREAKING NEWS</h2>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Regional news</a></li>
+                    <li><a href="#">Channels</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <div class="section">
+                <img src="..//hw19/img/news1.jpg" alt="image">
+            </div>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nisi a inventore officia cum rem placeat!
+                Quae ipsa iure saepe laborum itaque et fugit nostrum?
+                Atque assumenda nulla nostrum architecto nobis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nisi a inventore officia cum rem placeat!
+                Quae ipsa iure saepe laborum itaque et fugit nostrum?
+                Atque assumenda nulla nostrum architecto nobis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nisi a inventore officia cum rem placeat!
+                Quae ipsa iure saepe laborum itaque et fugit nostrum?
+                Atque assumenda nulla nostrum architecto nobis. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Hic delectus consectetur doloribus
+                laborum similique expedita ipsum exercitationem magni? Omnis voluptatem,
+                modi veritatis ipsum cumque atque error dolore est Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio consequuntur commodi beatae tenetur est. Quidem voluptate delectus veritatis quia ipsam reiciendis odio praesentium,
+                commodi inventore, aliquam, porro modi laudantium? Libero? repudiandae 
+                
+            </p>
+        </div>
+        <div>
+            <div class="img-pic">
+                <img src="..//hw19/img/image.jpg" alt="image">
+                <p class="title">
+                    Regional news
+                </p>
+            </div>
+            <div class="text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quasi laudantium laboriosam doloremque reiciendis recusandae
+                </p>
+            </div>
+            <div class="read">
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div>
+            <div class="img-pic">
+                <img src="..//hw19/img/image (1).jpg" alt="image">
+                <p class="title">
+                    Weather
+                </p>
+            </div>
+            <div class="text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quasi laudantium laboriosam doloremque reiciendis recusandae
+                </p>
+            </div>
+            <div class="read">
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div>
+            <div class="img-pic">
+                <img src="..//hw19/img/img3.jpg" alt="image">
+                <p class="title">
+                    Crime
+                </p>
+            </div>
+            <div class="text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quasi laudantium laboriosam doloremque reiciendis recusandae
+
+                </p>
+            </div>
+            <div class="read">
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div>
+            <div class="img-pic">
+                <img src="..//hw19/img/img4.jpg" alt="image">
+                <p class="title">
+                    Dogs have fun with cat
+                </p>
+            </div>
+            <div class="text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quasi laudantium laboriosam doloremque reiciendis recusandae
+
+                </p>
+            </div>
+            <div class="read">
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
